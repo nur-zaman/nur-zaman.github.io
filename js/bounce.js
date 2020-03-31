@@ -87,12 +87,12 @@ var circleArray = [];
 function init()
 {
 	circleArray = [];
-	for(var i = 0 ; i < 800 ; i++){
+	for(var i = 0 ; i < 1000 ; i++){
 	var x = Math.random() * (innerWidth - radius * 2)+radius;
 	var y = Math.random() * (innerHeight - radius * 2)+radius;
 	var dx = (Math.random() - 0.5)*1;
 	var dy = (Math.random() - 0.5)*2;
-	var radius = 3 * Math.random() + 2;
+	var radius = 2*Math.random()+1;
 	var hue = 'rgba(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',.3)';
 	
 	circleArray.push(new Circle(x,y,dx,dy,radius,hue));

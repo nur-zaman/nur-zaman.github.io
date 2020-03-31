@@ -13,6 +13,12 @@ var minRad = 2;
 //  	mouse.x = event.x;
 //  	mouse.y = event.y;
 // })
+window.addEventListener('resize',function(){
+	canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+init();
+
+});
 
 function Circle(x,y,rad,dxRad,hue) {
 	this.x = x;
@@ -50,14 +56,14 @@ var circleArray = [];
 function init()
 {
 	circleArray = [];
-	for(var i = 0 ; i < 100 ; i++){
+	for(var i = 0 ; i < 500 ; i++){
 	var rad = 3 * Math.random() + 3;
 	var x = Math.random() * (innerWidth - rad * 2)+rad;
 	var y = Math.random() * (innerHeight - rad * 2)+rad;
 	var dxRad = (Math.random() - 0.5)*1;
 	
 	
-	var hue = 'rgba(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',.3)';
+	var hue = 'rgba(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',.1)';
 	
 	circleArray.push(new Circle(x,y,rad,dxRad,hue));
 	
