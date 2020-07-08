@@ -1,10 +1,30 @@
 
-p {
+html{
+    background-color: blueviolet;
+    font-family: monospace,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.body {
+    
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 5em;
     margin: 10px;
 }
-
+.uwu {
+    font-size: 200px;
+    color: bisque;
+}
+.this {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: monospace;
+}
 
