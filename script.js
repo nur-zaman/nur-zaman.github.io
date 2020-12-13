@@ -1,11 +1,11 @@
 var time = 250
-setInterval(function(){ console.log("x")
+setInterval(function(){
 var r = Math.random()
 if (r > 0.5){
     document.getElementById("ch").innerHTML = "OwO"
 }
 else {
-    document.getElementById("ch").innerHTML = "_w_"
+    document.getElementById("ch").innerHTML = "^w^"
 }
 if(r==1 || r==0){
     document.getElementById("ch").innerHTML = "UwU"

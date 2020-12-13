@@ -1,30 +1,84 @@
-
-html{
-    background-color: blueviolet;
-    font-family: monospace,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+html {
+  background-color: blueviolet;
+  font-family: monospace, Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
 }
-.body {
-    
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-p{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
+.container {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
 }
 .uwu {
-    font-size: 200px;
-    color: bisque;
+  font-size: 200px;
+  color: bisque;
 }
 .this {
-    font-size: 20px;
-    color: #ffffff;
-    font-family: monospace;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: monospace;
 }
 
+.buttons {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:center;
+  margin-top: auto;
+  flex-direction:row;
+  /* margin-top: 50%; */
+}
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 0.6em;
+  color: white;
+  cursor: pointer;
+  display: -webkit-box;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+a, .btn:hover{
+    color: blueviolet;
+    outline: 0;
+}
+.btn:focus {
+
+  outline: 0;
+}
+
+ .first {
+  -webkit-transition: box-shadow 200ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+  box-shadow: 0 0 40px 40px rgb(255, 255, 255) inset;
+}
+.footer{align-items: center;
+    margin-left: 40%;
+    margin-right: 50%;
+}
