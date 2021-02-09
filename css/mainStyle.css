@@ -2,20 +2,27 @@ html {
   background-color: blueviolet;
   font-family: monospace, Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
+    align-items: stretch;
+}
+body {
+  overflow-y: hidden;
+  overflow-x: hidden; 
 }
 .container {
-  width: 300px;
+  /* width: 300px;
   height: 300px;
   position: absolute;
   left: 50%;
   top: 40%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  flex: 1;
 }
 p {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px;
+  margin: 0;
 }
 .uwu {
   font-size: 200px;
@@ -30,11 +37,13 @@ p {
 .buttons {
   display: -webkit-box;
   display: flex;
+  flex-direction:column;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items:center;
-  margin-top: auto;
-  flex-direction:row;
+  /* align-items:flex-end; */
+  align-self: stretch;
+  flex-direction:column;
+  flex-grow: 1;
   /* margin-top: 50%; */
 }
 
@@ -78,7 +87,10 @@ a, .btn:hover{
 .first:hover {
   box-shadow: 0 0 40px 40px rgb(255, 255, 255) inset;
 }
-.footer{align-items: center;
-    margin-left: 40%;
-    margin-right: 50%;
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-shrink: 0;
 }
