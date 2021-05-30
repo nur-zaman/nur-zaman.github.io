@@ -10,7 +10,7 @@ const projectsContent  =  document.querySelector('#projects-content')
 
 
 let aboutBox = new WinBox({
-    title: 'About Me 🧑',
+    title: 'About Me ',
     // modal: true,
     width: '400px',
     height: '400px',
@@ -27,7 +27,7 @@ let aboutBox = new WinBox({
 
 about.addEventListener('click', () => {
     let aboutBox = new WinBox({
-      title: 'About Me 🧑',
+      title: 'About Me ',
       // modal: true,
       width: '400px',
       height: '400px',
@@ -45,7 +45,7 @@ about.addEventListener('click', () => {
   
   blog.addEventListener('click', () => {
 let blogBox = new WinBox({
-      title: 'Blog 📝:',
+      title: 'Blog :',
       // modal: true,
       width: '400px',
       height: '200px',
