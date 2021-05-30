@@ -3,23 +3,63 @@
 <head>
 	<title>..::Hello::..</title>
 	<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
-	<script src="script.js"></script>
+	<link rel="preload" href="js/winbox.bundle.js" as="script">
+	
+	<script src="https://kit.fontawesome.com/4bdc467289.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
-
 <div class="container">
-<p  class="uwu" id="ch">^_^<p>
-<p  class="this">>Hello<</p>
+	<nav>
+		<ul>
+
+	<li id="about"><i class="far fa-address-card"></i>About</li>
+	<li id="projects"><i class="fas fa-laptop-code"></i>Projects</li>
+	<li id="blog"><i class="fas fa-blog"></i>Blog</li>
+
+	<li id="github"><a href="http://github.com/nur-zaman" target="_blank"><i class="fab fa-github"></i>Github</a></li>
+
+	<li id="browser"><i class="fas fa-globe"></i></i>Browser</li>
+</ul>
+</nav>
 </div>
-<div class="buttons">
-	<button class="btn first" onclick="window.open(`https://nur-zaman.github.io/digital-signal-visualizer/`,'_blank');" >
-	Digital Signal Visualizer</button>
-	<button class="btn first" onclick="window.open('https://nur-zaman.github.io/NbaseCalc/','_blank');">N base Calculator</button>
-	<button class="btn first" onclick="window.open('https://github.com/nur-zaman/clipboardLogger/','_blank');">Clipboad Logger</button>
-	<button class="btn first" onclick="window.open('https://github.com/nur-zaman/TicTacToeAI/','_blank');">TicTacToe  AI</button>
+
+
+<div class="hidden">
+	<div id="about-content">
+		<p>/Home/About me.md></p>
+		<p>Hello, I'm Nur Uz Zaman. Thanks for visiting my portfolio page.
+		</p>
+		<p>I'm currently studying as an undergraduate student at BRAC University.</p>
+		<p>Feel free to check out this fun site and browse through my works<span class="cursor">|</span></p>
+	</div>
+
+	<div id="projects-content">
+		<p>/Home/projects.list></p>
+		<p>I have worked on some projects in my free times,
+		</p>
+		<ul>
+			<li>Digital Signal Visualizer With HTML5 Canvas<a href="https://nur-zaman.github.io/digital-signal-visualizer/" target="_blank">Check it out here</a></li>
+
+
+			<li>Clipboad Logger With Python<a href="https://github.com/nur-zaman/clipboardLogger/" target="_blank">Check it out here</a></li>
+
+
+			<li>N-Base Number Calculator<a href="https://nur-zaman.github.io/NbaseCalc/" target="_blank">Check it out here</a></li>
+
+			<li>TicTacToe  AI with MinMax Algorithom<a href="https://github.com/nur-zaman/TicTacToeAI/" target="_blank">Check it out here</a></li>
+		</ul>
+	</div>
+
+	<div id="blog-content">
+		<p>/Home/blog.text></p>
+		<p>Blog is being worked on . Please check back later. <span class="cursor">|</span></p>
+	</div>
 </div>
-<div class="footer"
-<span class="git" ><a style="color: white;" href="https://github.com/nur-zaman/" target="_blank" rel="noopener noreferrer">Github</a></span>
-</div>
+
+
+<script src="js/winbox.bundle.js" defer></script>
+<script src="js/script.js" defer></script>
 </body>
 </html>

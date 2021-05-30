@@ -1,96 +1,113 @@
-html {
-  background-color: blueviolet;
-  font-family: monospace, Impact, Haettenschweiler, "Arial Narrow Bold",
-    sans-serif;
-    align-items: stretch;
-}
-body {
-  overflow-y: hidden;
-  overflow-x: hidden; 
-}
-.container {
-  /* width: 300px;
-  height: 300px;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  flex: 1;
-}
-p {
-  margin: 0;
-}
-.uwu {
-  font-size: 200px;
-  color: bisque;
-}
-.this {
-  font-size: 20px;
-  color: #ffffff;
-  font-family: monospace;
-}
-
-.buttons {
-  display: -webkit-box;
-  display: flex;
-  flex-direction:column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  /* align-items:flex-end; */
-  align-self: stretch;
-  flex-direction:column;
-  flex-grow: 1;
-  /* margin-top: 50%; */
-}
-
-.btn {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
   box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 0.6em;
-  color: white;
-  cursor: pointer;
-  display: -webkit-box;
+
+}
+
+:root{
+ --light: #ccc;
+}
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  background-color: #333;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.6;
+  overflow: hidden; 
+}
+.container{
+  margin:auto;
+  height: 100vh;
   display: flex;
-  align-self: center;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1;
-  margin: 20px;
-  padding: 1.2em 2.8em;
+  flex-direction: column;
+}
+a{
+  color: var(--light);
   text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-a, .btn:hover{
-    color: blueviolet;
-    outline: 0;
-}
-.btn:focus {
-
-  outline: 0;
-}
-
- .first {
-  -webkit-transition: box-shadow 200ms ease-in-out, color 300ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, color 300ms ease-in-out;
-}
-.first:hover {
-  box-shadow: 0 0 40px 40px rgb(255, 255, 255) inset;
-}
-.footer{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  flex-shrink: 0;
+  font-size: 2vh;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  width : 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+margin-bottom: 2vh;
+
+}
+ul{
+  list-style-type: none;
+  
+  
+}
+li{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+
+}
+i{
+  font-size: 5vh;
+}
+
+#projects-content{
+  display: flex;
+  flex-direction: column;
+ justify-content: left;
+}
+#projects-content li{
+  color: rgb(255, 202, 40);
+}
+
+
+.hidden{
+  display:none;
+}
+.cursor {
+  font-weight: 700;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: #d5ccba;
+  }
+}
+.wb-body {
+    /* the width of window border: */
+    margin: 4px;
+    color: #d5ccba;
+    background: #20111b;
+    font-size: medium;
+}
+.wb-body::-webkit-scrollbar {
+  width: 5px;
+}
+.wb-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.wb-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #263040;
+}
+.wb-body::-webkit-scrollbar-thumb:window-inactive {
+  background: #181f2a;
+}
+.wb-body::-webkit-scrollbar-corner {
+  background: transparent;
 }
