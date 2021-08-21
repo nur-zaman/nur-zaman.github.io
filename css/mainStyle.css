@@ -69,6 +69,26 @@ i{
   color: rgb(255, 202, 40);
 }
 
+.custom-shape-divider-bottom-1629546388 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1629546388 svg {
+  position: relative;
+  display: block;
+  width: calc(173% + 1.3px);
+  height: 113px;
+}
+
+.custom-shape-divider-bottom-1629546388 .shape-fill {
+  fill: #F5A623;
+}
+
 
 .hidden{
   display:none;
