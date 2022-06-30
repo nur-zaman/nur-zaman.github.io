@@ -43,23 +43,23 @@ about.addEventListener('click', () => {
     })
   })
   
-  blog.addEventListener('click', () => {
-let blogBox = new WinBox({
-      title: 'Blog :',
-      // modal: true,
-      width: '400px',
-      height: '200px',
-      x: "50%",
-      y: "25%",
-      mount: blogContent,
-      onfocus: function () {
-        this.setBackground('#000')
-      },
-      onblur: function () {
-        this.setBackground('#777')
-      },
-    })
-  })
+//   blog.addEventListener('click', () => {
+// let blogBox = new WinBox({
+//       title: 'Blog :',
+//       // modal: true,
+//       width: '400px',
+//       height: '200px',
+//       x: "50%",
+//       y: "25%",
+//       mount: blogContent,
+//       onfocus: function () {
+//         this.setBackground('#000')
+//       },
+//       onblur: function () {
+//         this.setBackground('#777')
+//       },
+//     })
+//   })
 
   projects.addEventListener('click', () => {
   
