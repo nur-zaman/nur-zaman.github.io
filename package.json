@@ -1,0 +1,10 @@
+{
+  "name": "blowfish_template",
+  "version": "1.0.0",
+  "description": "Blowfish Template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "hugo server --minify -D -E -F"
+  }
+ 
+}

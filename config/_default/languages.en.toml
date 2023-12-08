@@ -1,0 +1,23 @@
+languageCode = "en"
+languageName = "English"
+displayName = "EN"
+isoCode = "en"
+weight = 1
+rtl = false
+
+title = ""
+logo = "img/blowfish_logo_transparent.png"
+description = "My awesome website"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+dateFormat = "2 January 2006"
+
+[author]
+  name = "Nur Uz Zaman"
+  image = "img/avatar.png"
+  headline = "Software Engineer"
+  bio = "Just a guy trying to not be replaced by AI"
+   links = [
+     { github = "https://github.com/nunocoracao/blowfish" },
+     { x-twitter = "https://twitter.com/burufugu" }
+   ]
