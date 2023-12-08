@@ -6,7 +6,7 @@ tags: ["post","lorem","ipsum"]
 #externalUrl: ""
 #showSummary: true
 date: 2021-09-04
-draft: true
+draft: false
 ---
 
 ## Lorem ipsum dolor sit amet
