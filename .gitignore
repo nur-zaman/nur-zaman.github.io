@@ -1,3 +1,10 @@
+#build dir
+public
+resources
+
+#obsidian config
+.obsidian
+
 # Logs
 logs
 *.log
