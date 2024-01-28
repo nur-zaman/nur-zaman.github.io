@@ -5,7 +5,7 @@ date: 2022-07-01
 categories:
   - projects
 tags: [project,bracu]
-draft: true
+draft: false
 type: projects
 ---
 

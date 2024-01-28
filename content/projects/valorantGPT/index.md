@@ -5,7 +5,7 @@ date: 2023-05-04
 categories:
   - projects
 tags: [project,gpt,ai]
-draft: true
+draft: false
 type: projects
 ---
 
