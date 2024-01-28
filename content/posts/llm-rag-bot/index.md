@@ -76,7 +76,7 @@ For this example we will put this entire code base into the data folder!
 - Put your tokens inside the `.env` file.
 
 
-![[env.png]]
+![](env.png)
 
 
  
