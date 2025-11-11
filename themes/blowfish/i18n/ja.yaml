@@ -63,3 +63,6 @@ shortcode:
 
 recent:
   show_more: "もっと見る"
+
+announcement:
+  dismiss: "Dismiss"

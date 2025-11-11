@@ -69,3 +69,6 @@ shortcode:
 
 recent:
   show_more: "Prikaži Više"
+
+announcement:
+  dismiss: "Dismiss"

@@ -63,3 +63,6 @@ shortcode:
 
 recent:
   show_more: "Afișați mai multe"
+
+announcement:
+  dismiss: "Dismiss"

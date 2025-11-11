@@ -179,6 +179,22 @@ Many of the article defaults here can be overridden on a per article basis by sp
 | Name            | Default   | Description                                                                                                         |
 | --------------- | --------- | ------------------------------------------------------------------------------------------------------------------- |
 | `header.layout` | `"basic"` | Defines the header for the entire site, supported values are `basic`, `fixed`, `fixed-fill`, and `fixed-fill-blur`. |
+### Announcement
+
+| Name                       | Default      | Description
+|
+| -------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `announcement.enable`      | `false`      | Controls whether the global announcement banner should be rendered. |
+| `announcement.id`          | `"global"`  | Identifier used to persist dismissals in local storage. Change when announcing something new to ensure returning visitors see the updated message. |
+| `announcement.content`     | `""`        | Markdown content rendered inside the banner. When both `content` and `contentInline` are provided, the inline HTML version takes precedence. |
+| `announcement.contentInline` | _Not set_  | Raw HTML content rendered inside the banner. Useful for adding links or custom markup that shouldn't be sanitised. |
+| `announcement.dismissible` | `true`       | When enabled a dismiss button is displayed so visitors can hide the message. |
+| `announcement.showOnce`    | `true`       | Persists the dismissed state in local storage so the banner only appears once for each visitor. Set to `false` to show the message again on the next page load. |
+| `announcement.style`       | `"info"`    | Applies a preset colour scheme to the banner. Supported values are `info`, `accent`, `warning`, `success`, and `danger`. |
+| `announcement.showOnPages` | `[]`         | Restricts the banner to specific pages. Provide a list of relative URLs (eg. `"/docs/"`). When empty the message appears on all pages. |
+| `announcement.hideOnPages` | `[]`         | Prevents the banner from rendering on the supplied relative URLs. |
+| `announcement.classes`     | _Not set_    | Optional Tailwind utility classes appended to the banner wrapper for additional customisation. |
+
 ### Footer
 
 | Name                            | Default | Description                                                                                                                                                                                                               |

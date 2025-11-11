@@ -111,6 +111,19 @@ body:has(#menu-controller:checked) {
   @apply absolute opacity-5 -z-10;
 }
 
+/* Announcement banner */
+.announcement-bar {
+  @apply transition-all duration-200;
+}
+
+.announcement-bar .announcement-dismiss {
+  @apply bg-transparent text-current hover:bg-white/40 hover:text-inherit dark:hover:bg-black/20;
+}
+
+.announcement-hidden {
+  @apply hidden;
+}
+
 /* -- Chroma Highlight -- */
 /* Background */
 .prose .chroma {

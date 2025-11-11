@@ -63,3 +63,6 @@ shortcode:
 
 recent:
   show_more: "להראות יותר"
+
+announcement:
+  dismiss: "Dismiss"
