@@ -63,3 +63,6 @@ shortcode:
 
 recent:
   show_more: "Mutass Többet"
+
+announcement:
+  dismiss: "Dismiss"

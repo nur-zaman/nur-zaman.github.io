@@ -69,3 +69,6 @@ shortcode:
 
 recent:
   show_more: "Xem nhiều hơn"
+
+announcement:
+  dismiss: "Dismiss"

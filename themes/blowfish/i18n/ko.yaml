@@ -69,3 +69,6 @@ shortcode:
 
 recent:
   show_more: "더 보기"
+
+announcement:
+  dismiss: "Dismiss"

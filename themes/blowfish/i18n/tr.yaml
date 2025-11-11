@@ -63,3 +63,6 @@ shortcode:
 
 recent:
   show_more: "Daha Fazla Göster"
+
+announcement:
+  dismiss: "Dismiss"

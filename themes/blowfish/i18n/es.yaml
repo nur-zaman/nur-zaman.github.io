@@ -69,3 +69,6 @@ shortcode:
 
 recent:
   show_more: "Mostrar más"
+
+announcement:
+  dismiss: "Dismiss"

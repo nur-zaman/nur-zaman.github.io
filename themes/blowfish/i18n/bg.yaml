@@ -70,3 +70,6 @@ shortcode:
 
 recent:
   show_more: "Виж още"
+
+announcement:
+  dismiss: "Dismiss"

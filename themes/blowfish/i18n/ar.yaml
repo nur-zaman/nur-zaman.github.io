@@ -68,3 +68,6 @@ shortcode:
 
 recent:
   show_more: "قراءة المزيد"
+
+announcement:
+  dismiss: "Dismiss"

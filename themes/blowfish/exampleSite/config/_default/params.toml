@@ -28,6 +28,15 @@ smartTOCHideUnfocusedChildren = false
 [header]
   layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
 
+[announcement]
+  enable = true
+  id = "example"
+  content = "We're rolling out the brand new announcement banner in Blowfish 2.59!"
+  dismissible = true
+  showOnce = true
+  style = "accent"
+  hideOnPages = ["/docs/welcome/"]
+
 [footer]
   showMenu = true
   showCopyright = true

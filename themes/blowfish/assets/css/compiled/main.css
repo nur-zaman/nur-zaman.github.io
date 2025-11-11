@@ -8133,3 +8133,30 @@ pre {
 .\[\&\>svg\]\:fill-neutral-500>svg {
   fill: rgba(var(--color-neutral-500), 1);
 }
+
+.announcement-bar {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.2s;
+}
+
+.announcement-bar .announcement-dismiss {
+  background-color: transparent;
+  color: inherit;
+}
+
+.announcement-bar .announcement-dismiss:hover,
+.announcement-bar .announcement-dismiss:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: inherit;
+}
+
+.dark .announcement-bar .announcement-dismiss:hover,
+.dark .announcement-bar .announcement-dismiss:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: inherit;
+}
+
+.announcement-hidden {
+  display: none !important;
+}

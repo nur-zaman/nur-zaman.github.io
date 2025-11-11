@@ -1,0 +1,67 @@
+{{- $params := .Site.Params.announcement -}}
+{{- if and $params ($params.enable | default false) (or $params.content $params.contentInline) -}}
+  {{- $page := . -}}
+  {{- $shouldShow := true -}}
+  {{- $identifier := $params.id | default "global" -}}
+  {{- $content := "" -}}
+  {{- if $params.contentInline -}}
+    {{- $content = $params.contentInline | safeHTML -}}
+  {{- else if $params.content -}}
+    {{- $content = $params.content | markdownify -}}
+  {{- end -}}
+  {{- if and $shouldShow $params.showOnPages -}}
+    {{- $shouldShow = false -}}
+    {{- range $target := $params.showOnPages -}}
+      {{- if eq ($page.RelPermalink) ($target | relLangURL) -}}
+        {{- $shouldShow = true -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if and $shouldShow $params.hideOnPages -}}
+    {{- range $target := $params.hideOnPages -}}
+      {{- if eq ($page.RelPermalink) ($target | relLangURL) -}}
+        {{- $shouldShow = false -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $shouldShow -}}
+    {{- $style := $params.style | default "info" -}}
+    {{- $styles := dict
+      "info"    (dict "wrapper" "bg-primary-100 dark:bg-primary-900" "text" "text-primary-900 dark:text-primary-50")
+      "accent"  (dict "wrapper" "bg-accent-100 dark:bg-accent-900" "text" "text-accent-900 dark:text-accent-50")
+      "warning" (dict "wrapper" "bg-amber-100 dark:bg-amber-900" "text" "text-amber-900 dark:text-amber-50")
+      "success" (dict "wrapper" "bg-emerald-100 dark:bg-emerald-900" "text" "text-emerald-900 dark:text-emerald-50")
+      "danger"  (dict "wrapper" "bg-rose-100 dark:bg-rose-900" "text" "text-rose-900 dark:text-rose-50")
+    -}}
+    {{- $styleConfig := index $styles $style -}}
+    {{- if not $styleConfig -}}
+      {{- $styleConfig = index $styles "info" -}}
+    {{- end -}}
+    {{- $wrapperClasses := slice "announcement-bar" "rounded-xl" "px-4" "py-3" "mb-8" "shadow-lg" "border" "border-transparent" -}}
+    {{- $textClasses := slice "flex" "items-center" "justify-between" "gap-4" "flex-wrap" -}}
+    {{- $wrapperClasses = $wrapperClasses | append (index $styleConfig "wrapper") -}}
+    {{- $textClasses = $textClasses | append (index $styleConfig "text") -}}
+    {{- if $params.classes -}}
+      {{- $wrapperClasses = $wrapperClasses | append $params.classes -}}
+    {{- end -}}
+    <aside class="{{ delimit $wrapperClasses " " }}"
+      data-announcement
+      data-announcement-id="{{ $identifier }}"
+      data-announcement-dismissible="{{ if default false $params.dismissible }}true{{ else }}false{{ end }}"
+      data-announcement-once="{{ if default true $params.showOnce }}true{{ else }}false{{ end }}">
+      <div class="{{ delimit $textClasses " " }}">
+        <div class="announcement-content grow">
+          {{ $content }}
+        </div>
+        {{- if default false $params.dismissible -}}
+          <button type="button" class="announcement-dismiss inline-flex items-center gap-2 rounded-md border border-transparent px-3 py-1 font-medium"
+            aria-label="{{ i18n "announcement.dismiss" }}"
+            data-announcement-dismiss>
+            <span aria-hidden="true">&times;</span>
+            <span class="hidden sm:inline">{{ i18n "announcement.dismiss" }}</span>
+          </button>
+        {{- end -}}
+      </div>
+    </aside>
+  {{- end -}}
+{{- end -}}

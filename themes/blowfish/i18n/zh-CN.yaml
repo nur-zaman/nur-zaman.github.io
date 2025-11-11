@@ -62,3 +62,6 @@ shortcode:
 
 recent:
   show_more: "显示更多"
+
+announcement:
+  dismiss: "Dismiss"

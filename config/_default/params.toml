@@ -19,6 +19,17 @@ mainSections = ["posts"]
 [header]
   layout = "fixed" # valid options: basic, fixed
 
+[announcement]
+  enable = false
+  id = "global"
+  # Set `content` to markdown text or `contentInline` to raw HTML for the banner message.
+  content = ""
+  dismissible = true
+  showOnce = true
+  style = "info" # valid options: info, accent, warning, success, danger
+  showOnPages = []
+  hideOnPages = []
+
 [footer]
   showMenu = false
   showCopyright = false
