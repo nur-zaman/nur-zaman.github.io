@@ -1,0 +1,76 @@
+colorScheme = "congo"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+enableSearch = true
+enableCodeCopy = true
+mainSections = [ "posts" ]
+firebase = { }
+fathomAnalytics = { }
+verification = { }
+smartTOC = true
+
+[header]
+layout = "fixed"
+
+[footer]
+showCopyright = true
+showThemeAttribution = true
+showAppearanceSwitcher = true
+showScrollToTop = true
+
+[homepage]
+layout = "hero"
+homepageImage = "img/cover.png"
+showRecent = false
+showRecentItems = 5
+showMoreLink = true
+showMoreLinkDest = "/blowfish_lowkey/posts"
+cardView = false
+cardViewScreenWidth = false
+layoutBackgroundBlur = false
+
+[article]
+showDate = true
+showDateUpdated = false
+showAuthor = true
+showHero = true
+heroStyle = "basic"
+showBreadcrumbs = true
+showDraftLabel = true
+showEdit = false
+editAppendPath = true
+seriesOpened = false
+showHeadingAnchors = true
+showPagination = true
+invertPagination = false
+showReadingTime = true
+showTableOfContents = true
+showTaxonomies = false
+showAuthorsBadges = false
+showWordCount = true
+showSummary = true
+sharingLinks = [
+  "linkedin",
+  "twitter",
+  "whatsapp",
+  "pinterest",
+  "reddit",
+  "facebook",
+  "email"
+]
+
+[list]
+layoutBackgroundHeaderSpace = false
+showBreadcrumbs = false
+showSummary = true
+showTableOfContents = false
+showCards = true
+groupByYear = true
+cardView = false
+cardViewScreenWidth = false
+
+[sitemap]
+excludedKinds = [ ]
+
+[taxonomy]
+showTermCount = true

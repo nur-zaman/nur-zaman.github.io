@@ -1,0 +1,30 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Nur's Blog"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+description = "My awesome website"
+dateFormat = "2 January 2006"
+
+  [params.author]
+  name = "Blue Blowfish"
+  image = "img/avatar.png"
+  headline = "This is my very simple profile website with my links"
+  bio = "A little bit about you"
+
+    [[params.author.links]]
+    link = "https://nunocoracao.github.io/blowfish/"
+
+    [[params.author.links]]
+    github = "https://github.com/nunocoracao/blowfish"
+
+    [[params.author.links]]
+    x-twitter = "https://twitter.com/burufugu"
+
+["params.author"]
+name = "Nur Uz Zaman"
+bio = "Guy trying not to be replaced by AI"
